@@ -1,0 +1,68 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5% auto;
+    background-color: white;
+    width:700px;
+    border-radius: 10px;
+}
+
+.body h1{
+    font-size: 35px;
+}
+
+.image img{
+    max-width: 90%;
+    min-height: 100%;
+    height: auto;
+    border-radius:10px  0px 0px 10px ;
+    
+}
+.ruppes h1{
+    color:hsl(158, 36%, 37%)  ;
+    font-size: 35px;
+}
+.ruppes span{
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: medium;
+}
+
+.button button{
+    background-color:hsl(158, 36%, 37%)  ;
+    padding: 10px;
+    width: 70%;
+    color: white;
+    border-radius: 10px;
+    box-shadow: none;
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 37.5rem;
+        height: 28.125rem;
+        flex-direction: row;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        max-width: 21.438rem;
+        height: 38.188rem;
+        background-color: var(--White);
+        border-radius: 10px 10px 10px 10px;
+        
+    }
+    .image img{
+        max-width: 21.438rem;
+    min-height: 15rem;
+}
+    }    
